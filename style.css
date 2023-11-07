@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AFAFAF;
+
+}
+::-webkit-scrollbar-thumb {
+  background: #979797;
+  border-radius: 25px;
+}
+
+/*Flèche*/
+.fleche {
+  text-align: right;
+  padding: 8px 15px 4px 0;
+}
+
+.fleches:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 52%;
+}
+
+.fleche img {
+  width: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Menu de navigation */
+
+#wrap {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  z-index: 99;
+  position: relative;
+  background: linear-gradient(to right, #a7a7a7, #feff9f, #a7a7a7);
+  justify-content: center;
+  display: flex;
+}
+
+.navbar {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.navbar li {
+  height: auto;
+  width: 135.8px;
+  float: left;
+  text-align: center;
+  list-style: none;
+  font: normal bold 13px/1em Arial, Verdana, Helvetica;
+  padding: 0;
+  margin: 0;
+  font-family: "Zen Antique", serif;
+  font-size: 16px;
+}
+
+.navbar a {
+  padding: 19px 0;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.navbar li:hover {
+  background-color: rgba(254, 255, 159, 0.8);
+}
+
+.navbar li ul {
+  display: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li:hover ul {
+  display: block;
+  border-bottom: 1px solid white;
+}
+
+.navbar li ul li {
+  background-color: rgba(254, 255, 159, 0.8);
+}
+
+.navbar li ul li a:hover {
+  background-color: rgb(253, 255, 131);
+}
+
+.nav {
+  background: linear-gradient(to right, #a7a7a7, #feff9f, #a7a7a7);
+  text-align: center;
+  font-size: 70px;
+  border-bottom: 2px solid white;
+}
+
+h1 {
+  padding: 90px;
+  font-family: Source Code Pro, sans-serif;
+  text-shadow: 5px 5px 12px white;
+}
+
+main {
+  background-color: #f59756;
+  height: auto;
+}
+
+.intro {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+  padding: 13px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+}
+
+.container .item {
+  height: 450px;
+  border: 1.7px solid white;
+  border-radius: 50px;
+  box-shadow: 5px 5px 15px black;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}
+
+/*------------------------------------------------------------------------------------*/
+
+.mojito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+.item-mojito {
+  padding: 2px;
+  height: 55px;
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  font-family: "Della Respira", serif;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.tout-mojito {
+  background-color: #c7ff9a;
+  border-radius: 41%;
+  text-align: center;
+  box-shadow: 5px 5px 15px black;
+}
+
+h2 {
+  border: 2px solid #d8d8d8;
+  width: 190px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Anaheim", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+.pina-colada {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item-pina-colada {
+  padding: 2px;
+  height: 55px;
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  font-family: "Della Respira", serif;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.tout-pina-colada {
+  background-color: #dacec2;
+  border-radius: 37%;
+  text-align: center;
+  box-shadow: 5px 5px 15px black;
+}
+
+
+.san-francisco {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+.item-san-francisco {
+  padding: 2px;
+  height: 55px;
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  font-family: "Della Respira", serif;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.tout-san-francisco {
+  background-color: #e4a903;
+  border-radius: 39%;
+  text-align: center;
+  box-shadow: 5px 5px 15px black;
+}
+
+footer {
+  background: #bdbdbd;
+  border-top: 1.8px solid white;
+  height: 80px;
+}
+
+.tout-coctail {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coctail-alcool {
+  background: linear-gradient(45deg, #ff4656, #ff8446);
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 50px;
+  object-fit: cover;
+  transition: 0.2s linear;
+  box-shadow: 5px 5px 15px black;
+}
+
+.coctail-alcool img {
+  height: 250px;
+  padding: 60px 60px 0 60px;
+  justify-content: center;
+}
+
+.coctail-alcool:hover {
+  transform: scale(1.1);
+  margin: 25px 0 25px 0;
+}
+
+.avec-alcool {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Della Respira", serif;
+}
+
+.coctail-sans-alcool {
+  background: linear-gradient(45deg, #ff4656, #ff8446);
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 50px;
+  object-fit: cover;
+  transition: 0.2s linear;
+  box-shadow: 5px 5px 15px black;
+}
+
+.coctail-sans-alcool:hover {
+  transform: scale(1.1);
+  margin: 25px 0 25px 0;
+}
+
+.coctail-sans-alcool img {
+  height: 250px;
+  padding: 60px 60px 0 60px;
+  justify-content: center;
+}
+
+.sans-alcool {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Della Respira", serif;
+}
+
+.titre-gros {
+  font-size: 110px;
+}
